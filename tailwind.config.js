@@ -3,16 +3,16 @@ module.exports = {
     "./pages/**/*.{html,js,tsx}",
     "./pages/*.{html,js,tsx}",
     "./components/**/*.{html,js,tsx}",
-    "./components/**/**/*.{html,js,tsx}",
+    "./components/**/**/*.{html,js,tsx}"
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
   variants: {
     extend: {
-      textColor: ["dark"],
-    },
-  },
+      textColor: ["dark"]
+    }
+  }
 };

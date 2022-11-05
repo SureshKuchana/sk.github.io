@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Suresh Koochana</title>
-        <link rel="icon" href="/sk.svg" />
+        <link rel='icon' href='/sk.svg' />
       </Head>
       <HomePage />
     </>
