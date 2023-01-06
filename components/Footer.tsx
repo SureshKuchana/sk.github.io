@@ -43,42 +43,27 @@ const navigation = {
 
 export const Footer = () => {
   return (
-    <footer
-      className='bg-dark-800 absolute bottom-0 w-full'
-      aria-labelledby='footer-heading'
-    >
-      <div className='max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8'>
-        <nav
-          className='-mx-5 -my-2 flex flex-wrap justify-center'
-          aria-label='Footer'
-        >
+    <footer className='' aria-labelledby='footer-heading'>
+      <div className=''>
+        <nav className='' aria-label='Footer'>
           {navigation.main.map(item => (
-            <div key={item.name} className='px-5 py-2'>
-              <a
-                href={item.href}
-                className='text-base text-dark-500 hover:text-dark-900'
-              >
+            <div key={item.name} className=''>
+              <a href={item.href} className=''>
                 {item.name}
               </a>
             </div>
           ))}
         </nav>
-        <div className='mt-8 flex justify-center space-x-6'>
+        <div className=''>
           {navigation.social.map(item => (
-            <a
-              key={item.name}
-              href={item.href}
-              className='text-dark-400 hover:text-dark-500'
-            >
-              <span className='sr-only'>{item.name}</span>
-              <item.icon className='h-6 w-6' aria-hidden='true' />
+            <a key={item.name} href={item.href} className=''>
+              <span className=''>{item.name}</span>
+              <item.icon className='' aria-hidden='true' />
             </a>
           ))}
         </div>
-        <p className='mt-8 text-center text-base text-dark-400'>
-          Made With 💌 By Suresh Koochana
-        </p>
-        <p className='mt-8 text-center text-base text-dark-400'>
+        <p className=''>Made With 💌 By Suresh Koochana</p>
+        <p className=''>
           © {new Date().getFullYear()} Inc. All rights reserved.
         </p>
       </div>

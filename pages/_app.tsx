@@ -1,12 +1,11 @@
-import { ThemeProvider } from "next-themes";
-import "../styles/globals.css";
+import { ChakraProvider, theme } from "@chakra-ui/react";
 
 // eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute='class'>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </ChakraProvider>
   );
 }
 
